@@ -12,7 +12,7 @@
     <meta name="author" content="Quiz and Play">
 
     <!--Insert a title here-->
-    <title>Quiz-and-Play: Part A</title>
+    <title>Play Part A</title>
     <!--Insert favicon-->
    
     <!--stylesheet-->
@@ -32,30 +32,41 @@
     <!--Main Content -->
     <main>
       <div>
-        <h2>Part A</h2>
+        <h3>Play Part A</h3>
       </div>
       <div>
-        <p>The East African region is rich in wildlife and is a great destination for many nature lovers. Let's see how well you know about wildlife from this region located at the equator</p>
-      </div>
-      <!--Quiz play steps-->
-      <div>
-        <h3>Ready for the Quiz? This is how it works:</h3>
-        <ol type="i">
-          <li>Enter your nickname.</li>
-          <li>Click the "Let's Go!" Button</li>
-          <li>A question about an animal will be displayed along with a space for your answer.</li>
-          <li>Write in your answer and click the "Enter" button.</li>
-          <li>Your answer will be displayed alongside a "Delete" button.</li>
-          <li>If you want to change your answer, click the "Delete" button. Otherwise, click the "Submit" button.</li>
-          <li>Your score will be displayed. A correct answer carries a score of 1. An incorrect answer carries a score of 0. Maximum score is 47.</li>
-          <li>Click the "Next Question" to go to the next question.</li>
-          <li>A score of 10/47 unlocks Part B by displaying the "Play Part B" button. You can either continue with Part A to improve your score or proceed to Part B.</li>
-        </ol>
-          
-        <br>
+        <label for="nickname">Your nickname</label>
+        <input type="text" id="nickname" name="nickname" placeholder="Enter your nickname">
 
-        <button>Go to the Quiz</button>
-                
+        <button>Enter</button>
+
+        <hr>
+
+        <button>Let's Go! </button>
+        
+        
+        <!--Call a javascript function that adds the following elements-->
+        <h4>Question 1</h4>
+
+        <p>Write the question here</p>
+
+        <label for="question1Answer">Your answer</label>
+        <input type="text" id="question1Answer" name="question1Answer" placeholder="Enter your answer">
+
+        <button>Enter</button>
+        <!-- Clicking enter returns the entered answer and a delete button.-->
+        <br>
+        <button>Delete</button>
+        <br>
+        <button>Submit</button>
+        <!--Initial scores is set to a default value of 0. Clicking submit button returns scores and updates the score. The updated score remains until a reset score button hs been pressed.-->
+        <br>
+        <button>Reset Score</button>
+        <br>
+        <button>Next Question</button>
+        <br>
+        <button>Play Part B</button>
+        
       </div>
 
     </main>

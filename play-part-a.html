@@ -14,7 +14,7 @@
     <!--Insert a title here-->
     <title>Play Part A</title>
     <!--Insert favicon-->
-   
+
     <!--stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
@@ -26,7 +26,7 @@
     <header>
       <a href="index.html">
         <h1>Quiz-and-Play</h1>
-      </a>  
+      </a>
       <h2>East African Animals Edition</h2>
       <p><em>Where fun and luck match and mix with your knowledge about animals.</em></p>
     </header>
@@ -35,51 +35,50 @@
     <main>
       <div>
         <h3>Play Part A</h3>
+        <button>Start Quiz</button>
       </div>
-      <div>
-        <label for="nickname">Your nickname</label>
-        <input type="text" id="nickname" name="nickname" placeholder="Enter your nickname">
 
-        <button>Enter</button>
-
-        <hr>
-
-        <button>Let's Go! </button>
-        
-        
         <!--Call a javascript function that adds the following elements-->
+      <div>
         <h4>Question 1</h4>
 
         <p>Write the question here</p>
 
-        <label for="question1Answer">Your answer</label>
         <input type="text" id="question1Answer" name="question1Answer" placeholder="Enter your answer">
 
         <button>Enter</button>
+      </div>
         <!-- Clicking enter returns the entered answer and a delete button.-->
         <br>
-        <button>Delete</button>
-        <br>
-        <button>Submit</button>
-        <!--Initial scores is set to a default value of 0. Clicking submit button returns scores and updates the score. The updated score remains until a reset score button hs been pressed.-->
-        <br>
-        <button>Reset Score</button>
-        <br>
-        <button>Next Question</button>
-        <br>
-        <!--Input the link "Go to Part B" using javascript-->
-        <button>Go to Part B</button>
 
-        <br>
+        <div class="part-a-scores">
+          <p class="scores">Correct<span id="correct">0</span></p>
+          <p class="scores">Incorrect<span id="incorrect">0</span></p>
+
+        </div>
+
+        <div>
+          <button>Delete</button>
+          <br>
+          <button>Submit</button>
+          <!--Initial scores is set to a default value of 0. Clicking submit button returns scores and updates the score. The updated score remains until a reset score button hs been pressed.-->
+          <br>
+          <button>Reset Score</button>
+          <br>
+          <button>Next Question</button>
+          <br>
+          <!--Input the link "Go to Part B" using javascript-->
+          <button>Go to Part B</button>
+
+        </div>
 
         <!--use the link below for now-->
 
-        <a href="quiz-and-play-part-b.html">Go to Part B</a>
-        
-      </div>
+        <a href="play-part-b.html">Go to Part B</a>
 
-      <a href="quiz-and-play-part-a.html">Back</a>
-      <a href="index.html">Home</a>
+        <a href="index.html">Home</a>
+
+        <script src="assets/js/quiz-and-play.js"></script>
 
     </main>
 

@@ -21,54 +21,84 @@
 
   <!-- body starts here-->
 
-  <body>
+  <body class="body">
     <!--header-->
-    <header>
+    <header class="header">
       <a href="index.html">
         <h1>Quiz-and-Play</h1>
-      </a>   
-      <h2>East African Animals Edition</h2>
+      </a>
       <p><em>Where fun and luck match and mix with your knowledge about animals.</em></p>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="play-part-a.html">Part A</a></li>
+          <li> <a href="play-part-b.html" class="active">Part B</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!--Main Content -->
-    <main>
-      <div>
+    <main class="mainContent">
+      <div Class="part-b-intro">
         <h2>Play Part B</h2>
-      </div>
-      <div>
         <p>Ready to challenge the <em><strong>Animal Wizard</strong></em>?</p>
         <h3>Let's Go!</h3>
-     
+      </div>
 
-      <button class="birds">Birds</button>
-      <button class="fish">Fish</button>
-      <button class ="mammals">Mammals</button>
-      <button class ="reptiles">Reptiles</button> 
-    </div>
+      <div class="animals">
+        <button class="birds">Birds</button>
+        <button class="fish">Fish</button>
+        <button class="mammals">Mammals</button>
+        <button class="reptiles">Reptiles</button>
+      </div>
+
+      <div class="playerScoreArea">
+        <label for="myRankScore">Your rank score is</label>
+        <input type="text" id="myRankScore">
+        <label for="myPredatorScore">Your predator score is</label>
+        <input type="text" id="myPredatorScore">
+        <label for="myTotalScore">Your total score is</label>
+        <input type="text" id="myTotalScore">
+      </div>
+
+      <div class="computerScoreArea">
+        <label for="comuterRankScore"><em><strong>Animal Wizard's</strong></em> rank score is</label>
+        <input type="text" id="computerRankScore">
+        <label for="computerPredatorScore"><em><strong>Animal Wizard's</strong></em> score is</label>
+        <input type="text" id="computerPredatorScore">
+        <label for="computerTotalScore"><em><strong>Animal Wizard's</strong></em> total score is</label>
+        <input type="text" id="computerTotalScore">
+      </div>
+
+      <div class="feedbackArea">
+        <p id="feedback message"></p>
+      </div>
+
 
       <div class="part-b-scores">
         <p class="scores">Wins<span id="wins">0</span></p>
         <p class="scores">Ties<span id="ties">0</span></p>
         <p class="scores">Losses<span id="losses">0</span></p>
-    </div>
+      </div>
 
-      <br>
-      <button>Reset Score</button>
-      <br>
-      <button>Back to home</button>
-      <br>
+      <button class="resetScoreButton">Reset Score</button>
+
+
       <!--Add a Congratulatory message for a game win and an encouragement for game loss-->
-      <a href="play-part-a.html">Back</a>
-      <br>
-      <a href="index.html">Home</a>
+      <div class="internalNavLinks">
+        <a href="play-part-a.html">Part A</a>
+        <a href="index.html">Home</a>
 
-      <script src="assets/js/quiz-and-play.js"></script>
+      </div>
+
+
+      <script src="assets\js\quiz-and-play.js"></script>
 
     </main>
 
     <!--Footer section starts here-->
-    <footer>
+    <footer class="footer">
       <ul id="social-media-links">
         <li><a href="https://twitter.com/" aria-label="Go to our Twitter page (opens in new tab)" target="_blank"
             rel="noopener"><i class="fa-brands fa-twitter"></i></a></li>

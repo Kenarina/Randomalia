@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         selectMyFish ();
       } else if (this.getAttribute("class") === "mammals") {
         alert(" Interesting! You selected 'Mammals'.");
+        selectMyMammal ();
       } else if (this.getAttribute("class") === "reptiles") {
         alert(" Hmmmm, You selected 'Reptiles'.");
       }
@@ -73,6 +74,14 @@ function selectMyFish () {
   
 }
 
+function selectMyMammal () {
+  const mammalsArray = ['African Elephant', 'Black Rhinoceros', 'Cheetah', 'Spotted Hyena', 'Lion', 'African Wild Dog', 'Baboon', 'Hippopotamus', 'Giraffe', 'Zebra', 'Impala', 'Vervet Monkey', 'Meerkat', 'African Buffalo', 'Leopard', 'Gorilla'];
+
+  const myMammal = mammalsArray[Math.floor(Math.random() * mammalsArray.length)];
+
+  document.getElementById("js-myMammal").innerHTML = `You have been assigned: ${myMammal}.`;
+  
+}
 
 
 function calculateScore() {

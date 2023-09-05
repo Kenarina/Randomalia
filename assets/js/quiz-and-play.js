@@ -4,10 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
   for (let button of buttons) {
     button.addEventListener("click", function () {
       if (this.getAttribute("class") === "birds") {
-
         alert(`Hey, You selected 'Birds'.` );
+        selectMyBird();
       } else if (this.getAttribute("class") === "fish") {
         alert(" Wow!, You selected 'Fish'.");
+        selectMyFish ();
       } else if (this.getAttribute("class") === "mammals") {
         alert(" Interesting! You selected 'Mammals'.");
       } else if (this.getAttribute("class") === "reptiles") {
@@ -49,9 +50,9 @@ function selectAnimal() {
 
   console.log(myFish);
 
-  const myAnimal = allAnimalsArray[Math.floor(Math.random() * allAnimalsArray.length)];
+  const wizardsAnimal = allAnimalsArray[Math.floor(Math.random() * allAnimalsArray.length)];
 
-  console.log(myAnimal);
+  console.log(wizardsAnimal);
 
 }
 
@@ -61,8 +62,15 @@ function selectMyBird () {
  let myBird = birdsArray[Math.floor(Math.random() * birdsArray.length)];
  
  document.getElementById("js-myBird").innerHTML = `You have been assigned: ${myBird}.`;
+}
 
+function selectMyFish () {
+  const fishArray = ['Nile Perch', 'Tilapia', 'Tigerfish', 'Catfish', 'Silverfish', 'Lungfish'];
 
+  const myFish = fishArray[Math.floor(Math.random() * fishArray.length)];
+
+  document.getElementById("js-myFish").innerHTML = `You have been assigned: ${myFish}.`;
+  
 }
 
 

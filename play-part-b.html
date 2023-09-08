@@ -46,62 +46,48 @@
         <h3>Let's Go!</h3>
       </div>
 
-      <div class="animals">
-        <button class="birds">Birds</button>
-        <button class="fish">Fish</button>
-        <button class="mammals">Mammals</button>
-        <button class="reptiles">Reptiles</button>
+      <div class="playbutton">
+
+       <button class = "js-playGame">Play</button>
+
       </div>
 
-      <div class = "myAssignedAnimal js-my-assigned-animal">
+      <div class="js-animalArea">
+
+        <span class="js-myAnimal"><strong><p id="js-myAnimal"></p></p></strong></span>
        
-        <span><strong><p id ="js-myBird"></p></p></strong></span>
-        <span><strong><p id ="js-myFish"></p></p></strong></span>
-        <span><strong><p id ="js-myMammal"></p></p></strong></span>
-        <span><strong><p id ="js-myReptile"></p></p></strong></span>
-        <span><strong><em><p id ="js-wizardsAnimal"></em></p></p></strong></span>
+        <span class="js-wizardsAnimal"><strong><em><p id="js-wizardsAnimal"></em></p></p></strong></span>
 
       </div>
 
-      <div class="playerScoreArea">
-        <label for="myRankScore">Your rank score is</label>
-        <input type="text" id="myRankScore">
-        <label for="myPredatorScore">Your predator score is</label>
-        <input type="text" id="myPredatorScore">
-        <label for="myTotalScore">Your total score is</label>
-        <input type="text" id="myTotalScore">
+      <div class="js-myScoreArea">
+
+        <span class="myRankScore"><p id="js-myRankScore"></p></span>
+        <span class="mySurvivalScore"><p id="js-mySurvivalScore"></p></span>
+        <span class="myTotalScore"><p id="js-myTotalScore"></p></span>
+
       </div>
 
-      <div class="computerScoreArea">
-        <label for="comuterRankScore"><em><strong>Animal Wizard's</strong></em> rank score is</label>
-        <input type="text" id="computerRankScore">
-        <label for="computerPredatorScore"><em><strong>Animal Wizard's</strong></em> score is</label>
-        <input type="text" id="computerPredatorScore">
-        <label for="computerTotalScore"><em><strong>Animal Wizard's</strong></em> total score is</label>
-        <input type="text" id="computerTotalScore">
+      <div class="js-wizardScoreArea">
+
+        <span class="wizardRankScore"><p id="js-wizardRankScore"></p></span>
+        <span class="wizardSurvivalScore"><p id="js-wizardSurvivalScore"></p></span>
+        <span class="wizardsTotalScore"><p id="js-wizardsTotalScore"></p></span>
+
+      <div class="score">
+        <span class="wins" id="js-wins"></span>
+        <span class="ties" id="js-ties"></span>
+        <span class="losses" id="js-losses"></span>
       </div>
 
-      <div class="feedbackArea">
-        <p id="feedback message"></p>
-      </div>
-
-
-      <div class="part-b-scores">
-        <p class="scores">Wins<span id="wins">0</span></p>
-        <p class="scores">Ties<span id="ties">0</span></p>
-        <p class="scores">Losses<span id="losses">0</span></p>
-      </div>
-
-      <button class="resetScoreButton">Reset Score</button>
-
-
+      <a href="play-part-b.html"><button class="js-clearSelection">Clear Play Area</button></a>
+      
       <!--Add a Congratulatory message for a game win and an encouragement for game loss-->
       <div class="internalNavLinks">
         <a href="play-part-a.html">Part A</a>
         <a href="index.html">Home</a>
 
       </div>
-
 
       <script src="assets\js\quiz-and-play.js"></script>
 

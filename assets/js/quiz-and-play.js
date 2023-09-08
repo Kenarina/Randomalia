@@ -10,10 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
   for (let button of buttons) {
     button.addEventListener("click", function () {
       if (this.getAttribute("class") === "js-playGame") {
-
-        alert(`Hey, a random class will selected, from which an animal will be assigned to you.`);
         selectAnimals();
-        alert("Rank scores for your animal classes will now be calculated");
+        alert(`Hey, a random class will selected, from which an animal will be assigned to you.`)
+        alert("Rank scores for your animal classes will now be calculated")
         calculateScores();
       }
     })
@@ -30,15 +29,22 @@ const reptilesArray = ['Nile Crocodile', 'Tortoise', 'Black Mamba', 'Puff Adder'
 
 const predatorLeague = ['African Fish Eagle', 'Augur Buzzard', 'African Pygmy Kingfisher', 'Vulture', 'Nile Perch', 'Catfish', 'Cheetah', 'Marabou Stork', 'Spotted Hyena', 'Lion', 'Leopard', 'African Wild Dog', 'Nile Crocodile', 'Python', 'King Cobra'];
 
-const allAnimalsArray = [birdsArray, mammalsArray, reptilesArray, fishArray];
+let allAnimalsArray = [''];
 
-const randomArray = allAnimalsArray[Math.floor(Math.random() * allAnimalsArray.length)];
+let randomArray = [''];
 
-const myAnimal = randomArray[Math.floor(Math.random() * randomArray.length)];
+let myAnimal = [''];
 
-const wizardsAnimal = randomArray[Math.floor(Math.random() * randomArray.length)];
 
 function selectAnimals() {
+
+  allAnimalsArray = [birdsArray, mammalsArray, reptilesArray, fishArray];
+
+  randomArray = allAnimalsArray[Math.floor(Math.random() * allAnimalsArray.length)];
+
+  myAnimal = randomArray[Math.floor(Math.random() * randomArray.length)];
+
+  wizardsAnimal = randomArray[Math.floor(Math.random() * randomArray.length)];
 
   document.getElementById("js-myAnimal").innerHTML = `You have been assigned: ${myAnimal}.`;
 
@@ -123,12 +129,15 @@ function calculateScores() {
   if (myTotalScore > wizardsTotalScore) {
     score.wins += 1;
     document.getElementById('js-wins').innerHTML = score.wins;
+    document.getElementById('js-scoreFeedback').innerHTML = 'Wow! Good move against the wizard!';
   } else if (myTotalScore < wizardsTotalScore) {
     score.losses += 1;
     document.getElementById('js-losses').innerHTML = score.losses;
+    document.getElementById('js-scoreFeedback').innerHTML = 'Sorry! The wizard comes in top.';
   } else if (myTotalScore === wizardsTotalScore) {
     score.ties += 1;
     document.getElementById('js-ties').innerHTML = score.ties;
+    document.getElementById('js-scoreFeedback').innerHTML = 'Hey, its a tie. Keep going.';
   }
 
 }
@@ -144,16 +153,17 @@ updateScoreElement();
 
 localStorage.setItem('score', JSON.stringify(score));
 
-function clearPlayArea() {
-  document.querySelector('.js-clearSelection')
-    .addEventListener('click', () => {
-      document.getElementsByClassName('.js-animalArea').innerHTML = '';
-      document.getElementsByClassName('.js-myScoreArea').innerHTML = '';
-      document.getElementsByClassName('.js-wizardScoreArea').innerHTML = '';
-    }
-)}
-
-document.querySelector('.js-clearSelection')
+document.querySelector('.js-reset-score')
   .addEventListener('click', () => {
-    clearPlayArea();
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+    localStorage.removeItem('score');
+    updateScoreElement();
   });
+/*
+  function n() {
+  document.getElementById('js-wins').innerHTML = score.wins;
+  document.getElementById('js-losses').innerHTML = score.losses;
+  document.getElementById('js-ties').innerHTML = score.ties;
+}*/

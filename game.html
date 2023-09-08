@@ -49,12 +49,6 @@
       <div class="playbutton">
 
         <button class="js-playGame">Play</button>
-        
-      </div>
-
-      <div class="playbutton">
-
-        <a href="game.html"><button class="js-clearSelection">Clear Play Area</button></a>
 
       </div>
 
@@ -91,46 +85,49 @@
         <span class="wizardRankScore">
           <p id="js-wizardRankScore"></p>
         </span>
+
         <span class="wizardSurvivalScore">
           <p id="js-wizardSurvivalScore"></p>
         </span>
+
         <span class="wizardsTotalScore">
           <p id="js-wizardsTotalScore"></p>
         </span>
 
-        <!--Add a Congratulatory message for a game win and an encouragement for game loss-->
-
-        <div>
-          <p id='js-result-message'></p>
+        <div class="scoreFeedback">
+          <p id="js-scoreFeedback"></p>
         </div>
+      </div>
 
-        <div class="js-score">
+      <div>
+        <p id='js-result-message'></p>
+      </div>
 
-          <span class="wins">Wins:
-            <p id="js-wins">0</p>
-          </span>
-          <span class="losses">Losses:
-            <p id="js-losses">0</p>
-          </span>
-          <span class="ties">Ties:
-            <p id="js-ties">0</p>
-          </span>
+      <div class="js-score">
+
+        <span class="wins">Wins:
+          <p id="js-wins">0</p>
+        </span>
+        <span class="losses">Losses:
+          <p id="js-losses">0</p>
+        </span>
+        <span class="ties">Ties:
+          <p id="js-ties">0</p>
+        </span>
+      </div>
+
+      <!--Add a Congratulatory message for a game win and an encouragement for game loss-->
+
+      <button class="js-reset-score">Reset Score</button>
 
 
-        </div>
+      <div class="internalNavLinks">
+        <a href="play-part-a.html">Part A</a>
+        <a href="index.html">Home</a>
 
+      </div>
 
-        
-        <a href="game.html"><button class="js-clearSelection">Clear Play Area</button></a>
-
-
-        <div class="internalNavLinks">
-          <a href="play-part-a.html">Part A</a>
-          <a href="index.html">Home</a>
-
-        </div>
-
-        <script src="assets\js\quiz-and-play.js"></script>
+      <script src="assets\js\quiz-and-play.js"></script>
 
     </main>
 

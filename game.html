@@ -33,7 +33,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="play-part-a.html">Part A</a></li>
-          <li> <a href="play-part-b.html" class="active">Part B</a></li>
+          <li> <a href="game.html" class="active">Part B</a></li>
         </ul>
       </nav>
     </header>
@@ -48,48 +48,89 @@
 
       <div class="playbutton">
 
-       <button class = "js-playGame">Play</button>
+        <button class="js-playGame">Play</button>
+        
+      </div>
+
+      <div class="playbutton">
+
+        <a href="game.html"><button class="js-clearSelection">Clear Play Area</button></a>
 
       </div>
 
       <div class="js-animalArea">
 
-        <span class="js-myAnimal"><strong><p id="js-myAnimal"></p></p></strong></span>
-       
-        <span class="js-wizardsAnimal"><strong><em><p id="js-wizardsAnimal"></em></p></p></strong></span>
+        <span class="js-myAnimal"><strong>
+            <p id="js-myAnimal"></p>
+            </p>
+          </strong></span>
+
+        <span class="js-wizardsAnimal"><strong><em>
+              <p id="js-wizardsAnimal">
+            </em></p>
+            </p></strong></span>
 
       </div>
 
       <div class="js-myScoreArea">
 
-        <span class="myRankScore"><p id="js-myRankScore"></p></span>
-        <span class="mySurvivalScore"><p id="js-mySurvivalScore"></p></span>
-        <span class="myTotalScore"><p id="js-myTotalScore"></p></span>
+        <span class="myRankScore">
+          <p id="js-myRankScore"></p>
+        </span>
+        <span class="mySurvivalScore">
+          <p id="js-mySurvivalScore"></p>
+        </span>
+        <span class="myTotalScore">
+          <p id="js-myTotalScore"></p>
+        </span>
 
       </div>
 
       <div class="js-wizardScoreArea">
 
-        <span class="wizardRankScore"><p id="js-wizardRankScore"></p></span>
-        <span class="wizardSurvivalScore"><p id="js-wizardSurvivalScore"></p></span>
-        <span class="wizardsTotalScore"><p id="js-wizardsTotalScore"></p></span>
+        <span class="wizardRankScore">
+          <p id="js-wizardRankScore"></p>
+        </span>
+        <span class="wizardSurvivalScore">
+          <p id="js-wizardSurvivalScore"></p>
+        </span>
+        <span class="wizardsTotalScore">
+          <p id="js-wizardsTotalScore"></p>
+        </span>
 
-      <div class="score">
-        <span class="wins" id="js-wins"></span>
-        <span class="ties" id="js-ties"></span>
-        <span class="losses" id="js-losses"></span>
-      </div>
+        <!--Add a Congratulatory message for a game win and an encouragement for game loss-->
 
-      <a href="play-part-b.html"><button class="js-clearSelection">Clear Play Area</button></a>
-      
-      <!--Add a Congratulatory message for a game win and an encouragement for game loss-->
-      <div class="internalNavLinks">
-        <a href="play-part-a.html">Part A</a>
-        <a href="index.html">Home</a>
+        <div>
+          <p id='js-result-message'></p>
+        </div>
 
-      </div>
+        <div class="js-score">
 
-      <script src="assets\js\quiz-and-play.js"></script>
+          <span class="wins">Wins:
+            <p id="js-wins">0</p>
+          </span>
+          <span class="losses">Losses:
+            <p id="js-losses">0</p>
+          </span>
+          <span class="ties">Ties:
+            <p id="js-ties">0</p>
+          </span>
+
+
+        </div>
+
+
+        
+        <a href="game.html"><button class="js-clearSelection">Clear Play Area</button></a>
+
+
+        <div class="internalNavLinks">
+          <a href="play-part-a.html">Part A</a>
+          <a href="index.html">Home</a>
+
+        </div>
+
+        <script src="assets\js\quiz-and-play.js"></script>
 
     </main>
 

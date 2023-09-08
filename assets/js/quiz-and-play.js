@@ -1,14 +1,20 @@
-
+/*Loading previous score from local storage upon loading page*/
+let score = JSON.parse(localStorage.getItem('score')) || {
+  wins: 0,
+  losses: 0,
+  ties: 0
+}
+updateScoreElement();
 document.addEventListener("DOMContentLoaded", function () {
-    let buttons = document.getElementsByTagName("button");
+  let buttons = document.getElementsByTagName("button");
   for (let button of buttons) {
     button.addEventListener("click", function () {
       if (this.getAttribute("class") === "js-playGame") {
+
         alert(`Hey, a random class will selected, from which an animal will be assigned to you.`);
         selectAnimals();
         alert("Rank scores for your animal classes will now be calculated");
         calculateScores();
-
       }
     })
   }
@@ -113,15 +119,41 @@ function calculateScores() {
   document.getElementById('js-wizardsTotalScore').innerHTML = `Animal Wizard's total score is:  ${wizardsTotalScore}`;
 
   document.getElementById('js-myTotalScore').innerHTML = `Your total score is:  ${myTotalScore}`;
-  
+
   if (myTotalScore > wizardsTotalScore) {
-    /*score.wins += 1;*/
-    document.getElementById('js-wins').innerHTML = `Congratulations! You win bragging rights!`;
+    score.wins += 1;
+    document.getElementById('js-wins').innerHTML = score.wins;
   } else if (myTotalScore < wizardsTotalScore) {
-    /*score.losses += 1;*/
-    document.getElementById('js-losses').innerHTML = `Sorry. You lose bragging rights on this one.Try again.`;
+    score.losses += 1;
+    document.getElementById('js-losses').innerHTML = score.losses;
   } else if (myTotalScore === wizardsTotalScore) {
-    /*score.ties += 1;*/
-    document.getElementById('js-ties').innerHTML = `Hhmmm... It's a tie.`;
+    score.ties += 1;
+    document.getElementById('js-ties').innerHTML = score.ties;
   }
+
 }
+
+function updateScoreElement() {
+  document.getElementById('js-wins').innerHTML = score.wins;
+  document.getElementById('js-losses').innerHTML = score.losses;
+  document.getElementById('js-ties').innerHTML = score.ties;
+}
+updateScoreElement();
+
+/** Store the score in local storage using JSON because local storage supports strings only*/
+
+localStorage.setItem('score', JSON.stringify(score));
+
+function clearPlayArea() {
+  document.querySelector('.js-clearSelection')
+    .addEventListener('click', () => {
+      document.getElementsByClassName('.js-animalArea').innerHTML = '';
+      document.getElementsByClassName('.js-myScoreArea').innerHTML = '';
+      document.getElementsByClassName('.js-wizardScoreArea').innerHTML = '';
+    }
+)}
+
+document.querySelector('.js-clearSelection')
+  .addEventListener('click', () => {
+    clearPlayArea();
+  });

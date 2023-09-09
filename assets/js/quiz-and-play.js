@@ -160,10 +160,16 @@ document.querySelector('.js-reset-score')
     score.ties = 0;
     localStorage.removeItem('score');
     updateScoreElement();
+    clearPlayArea();
   });
-/*
-  function n() {
-  document.getElementById('js-wins').innerHTML = score.wins;
-  document.getElementById('js-losses').innerHTML = score.losses;
-  document.getElementById('js-ties').innerHTML = score.ties;
-}*/
+
+function clearPlayArea() {
+  document.getElementById('js-wizardsAnimal').innerHTML = '';
+  document.getElementById('js-myAnimal').innerHTML = '';
+  document.getElementById('js-myRankScore').innerHTML = '';
+  document.getElementById('js-mySurvivalScore').innerHTML = '';
+  document.getElementById('js-myTotalScore').innerHTML = '';
+  document.getElementById('js-wizardRankScore').innerHTML = '';
+  document.getElementById('js-wizardSurvivalScore').innerHTML = '';
+  document.getElementById('js-wizardsTotalScore').innerHTML = '';
+}

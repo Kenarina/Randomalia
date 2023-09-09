@@ -37,3 +37,9 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 ---
 
 Happy coding!
+
+
+
+
+
+[Attribution link for congrats Icon](<a href="https://www.flaticon.com/free-animated-icons/congrats" title="congrats animated icons">Congrats animated icons created by Freepik - Flaticon</a>)

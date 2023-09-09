@@ -20,7 +20,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    }
+    margin: 2px;
+}
 
 /*Header*/
 .header {
@@ -32,12 +33,14 @@ body {
     height: 120px;
     text-align: center;
 }
+
 .gameName {
     color: blue;
     text-align: center;
     font-size: 8px;
-   
+
 }
+
 .edition {
     font-family: 'Oswald', sans-serif;
     color: black;
@@ -52,6 +55,7 @@ body {
     font-size: 12px;
 
 }
+
 .menu {
     font-size: 15px;
     letter-spacing: 2px;
@@ -64,19 +68,35 @@ body {
     padding: 12px;
 }
 
+/*Main Content of index.html*/
 
+.mainContent {
+    margin-top: 85px;
+    margin-bottom: 45px;
+    font-size: 14px;
+}
 
-/*
+.about,
+.theGame {
+    font-size: 14px;
+    text-align: justify;
+    padding: 5px;
+}
+.wizard,
+.predator {
+    color: blue;
+}
 
-/*Footer*/
-.footer {
-    margin-top: auto;
-    background-color: rgb(139, 165, 165);
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.survival-score,
+.total-score,
+.rank-score {
+    font-weight: bold;
+    color: rgb(9, 9, 46);
+}
+
+.gameLength {
+    color: rgb(107, 35, 19);
+    font-weight: bold;
 }
 
 
@@ -87,3 +107,28 @@ body {
 
 
 
+/*Footer*/
+.footer {
+    margin-top: auto;
+    background-color: rgb(139, 165, 165);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+
+#social-media-links {
+    text-align: center;
+    padding: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-top: 2px;
+}
+
+.copyright {
+    text-align: right;
+    margin-right: 8px;
+}

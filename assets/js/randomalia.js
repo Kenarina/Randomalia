@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         alert(`Hey, a random class will selected, from which an animal will be assigned to you.`)
         alert("Rank scores for your animal classes will now be calculated")
         calculateScores();
+        playCount();
       }
     })
   }
@@ -161,6 +162,7 @@ document.querySelector('.js-reset-score')
     localStorage.removeItem('score');
     updateScoreElement();
     clearPlayArea();
+    document.getElementById('js-playMoves').innerHTML = '';
   });
 
 function clearPlayArea() {
@@ -173,16 +175,21 @@ function clearPlayArea() {
   document.getElementById('js-wizardSurvivalScore').innerHTML = '';
   document.getElementById('js-wizardsTotalScore').innerHTML = '';
 }
-
+// add keydown functionality to enable play with key 'p'.
 document.body.addEventListener('keydown', (event) => {
   if (event.key === 'p') {
     selectAnimals();
-        alert(`Hey, a random class will selected, from which an animal will be assigned to you.`)
-        alert("Rank scores for your animal classes will now be calculated")
-        calculateScores();
-  } else if (event.key === 'enter') {
     alert(`Hey, a random class will selected, from which an animal will be assigned to you.`)
-        alert("Rank scores for your animal classes will now be calculated")
-        calculateScores();
+    alert("Rank scores for your animal classes will now be calculated")
+    calculateScores();
   }
 });
+
+/**
+ *  Enable click counts for the play button.
+*/
+let moveCount = 0;
+function playCount() {
+  moveCount += 1;
+  document.getElementById('js-playMoves').innerHTML = `Moves: ${moveCount}`;
+}

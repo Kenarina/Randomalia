@@ -173,3 +173,16 @@ function clearPlayArea() {
   document.getElementById('js-wizardSurvivalScore').innerHTML = '';
   document.getElementById('js-wizardsTotalScore').innerHTML = '';
 }
+
+document.body.addEventListener('keydown', (event) => {
+  if (event.key === 'p') {
+    selectAnimals();
+        alert(`Hey, a random class will selected, from which an animal will be assigned to you.`)
+        alert("Rank scores for your animal classes will now be calculated")
+        calculateScores();
+  } else if (event.key === 'enter') {
+    alert(`Hey, a random class will selected, from which an animal will be assigned to you.`)
+        alert("Rank scores for your animal classes will now be calculated")
+        calculateScores();
+  }
+});

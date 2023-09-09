@@ -21,6 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 2px;
+    width: 100%;
 }
 
 /*Header*/
@@ -99,14 +100,6 @@ body {
     font-weight: bold;
 }
 
-
-
-
-
-
-
-
-
 /*Footer*/
 .footer {
     margin-top: auto;
@@ -117,6 +110,8 @@ body {
     left: 0;
     right: 0;
     height: 50px;
+    padding-bottom: 4px;
+    
 }
 
 #social-media-links {
@@ -125,10 +120,63 @@ body {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    margin-top: 2px;
+    margin-top: 4px;
 }
 
 .copyright {
     text-align: right;
     margin-right: 8px;
+    
 }
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {       
+    /*Header*/  
+    .header {
+        
+        width: 100%;
+
+    }
+
+    
+    .edition {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .motto {
+        font-size: 15px;
+        align-items: flex-start;
+    
+    }
+
+    .mainContent {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 16px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 30px;
+    }
+    
+    .about,
+    .theGame {
+        font-size: 16px;
+        text-align: justify;
+        padding: 5px;
+    }
+    .wizard,
+    .predator {
+        color: blue;
+    }
+    
+    .survival-score,
+    .total-score,
+    .rank-score {
+        font-weight: bold;
+        color: rgb(9, 9, 46);
+    }
+    
+    .gameLength {
+        font-size: 20px;

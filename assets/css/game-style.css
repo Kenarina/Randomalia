@@ -1,0 +1,284 @@
+/*Google fonts import*/
+<style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+</style>
+
+/*Asterisk wildcard selector to override deafult styles by the browser*/
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/*General Styles*/
+body {
+    min-height: 100vh;
+    display: flex;
+    background-color: rgb(15, 134, 138);
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+/*Header*/
+.header {
+    position: fixed;
+    background-color: rgb(69, 159, 182);
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    text-align: center;
+}
+
+.gameName {
+    color: blue;
+    text-align: center;
+    font-size: 8px;
+
+}
+
+.edition {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+
+.motto {
+    color: rgb(18, 28, 116);
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+.menu {
+    font-size: 15px;
+    letter-spacing: 2px;
+    list-style-type: none;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+.navItem {
+    padding: 12px;
+}
+
+
+.mainContent {
+    margin-top: 85px;
+    margin-bottom: 45px;
+    font-size: 10px;
+}
+
+.gameIntro {
+    color: yellow;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+}
+
+.playbutton {
+    justify-content: center;
+    align-items: center;
+}
+
+.js-playGame {
+    display: flex;
+    background-color: rgb(121, 14, 98);
+    border: none;
+    border-radius: 60px;
+    color: white;
+    padding: 8px 15px;
+    font-size: 10px;
+    align-self: center;
+    cursor: pointer;
+}
+
+#js-countMoves {
+    color: rgb(13, 13, 116);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#js-myAnimal {
+    color: rgb(19, 30, 190);
+    font-size: 12px;
+}
+
+#js-wizardsAnimal {
+    color: rgb(19, 30, 190);
+    font-size: 12px;
+}
+
+.js-myScoreArea,
+.js-wizardScoreArea {
+    background-color: rgb(46, 202, 85);
+    font-size: 11px;
+    align-items: center;
+    text-align: center;
+}
+
+.myRankScore,
+.wizardRankScore {
+    color: rgb(74, 8, 94);
+    font-weight: bold;
+    width: 70%;
+}
+
+.mySurvivalScore,
+.wizardSurvivalScore {
+    font-weight: bold;
+}
+
+.myTotalScore,
+.wizardsTotalScore {
+    color: rgb(9, 20, 117);
+    font-weight: bold;
+}
+
+.scoreFeedback {
+    color: rgb(80, 3, 26);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.js-score {
+    background-color: aquamarine;
+   display: flex;
+   justify-content: space-between;
+   font-size: 12px;
+   font-weight: bold;
+   padding-bottom: 0px;
+   margin-bottom: 4px;
+}
+
+.js-reset-score {
+    background-color: rgb(121, 14, 98);
+    border: none;
+    border-radius: 60px;
+    color: white;
+    padding: 8px 15px;
+    font-size: 12px;
+    align-self: center;
+}
+
+.pageNavLink {
+    margin-top: 5px;
+    align-items: center;
+}
+
+/*Footer*/
+.footer {
+    margin-top: auto;
+    background-color: rgb(139, 165, 165);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    padding-bottom: 4px;
+
+}
+
+#social-media-links {
+    text-align: center;
+    padding: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-top: 4px;
+}
+
+.copyright {
+    text-align: right;
+    margin-right: 8px;
+
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {       
+    /*Header*/  
+    .header {
+        
+        width: 100%;
+
+    }
+
+    
+    .edition {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .motto {
+        font-size: 15px;
+        align-items: flex-start;
+    
+    }
+
+    .mainContent {
+        padding-bottom: 20px;
+        padding-left: 10px;
+    }
+    
+
+    
+    .welcomeMessage {
+        font-size: 20px;
+        margin-bottom: 0px;
+        padding-top: 20px;
+        
+    }
+    
+    #js-myAnimal {
+        color: rgb(19, 30, 190);
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    #js-wizardsAnimal {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .js-myScoreArea,
+    .js-wizardScoreArea {
+        font-size: 14px;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    
+    
+    }
+      
+    .scoreFeedback {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .js-score {        
+       font-size: 15px;
+       font-weight: bold;
+       padding-left: 150px;
+       padding-right: 150px;
+       padding-bottom: 0px;
+       max-height: fit-content;
+    }
+    
+    .pageNavLink {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+}

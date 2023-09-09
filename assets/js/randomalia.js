@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
       if (this.getAttribute("class") === "js-playGame") {
         selectAnimals();
-        alert(`Hey, a random class will be selected, from which an animal will be assigned to you.`)
-        alert("Rank scores for your animal classes will now be calculated")
+        alert("Selecting animal...")
+        alert("Calculating scores...")
         calculateScores();
         playCount();
       }
@@ -47,9 +47,9 @@ function selectAnimals() {
 
   wizardsAnimal = randomArray[Math.floor(Math.random() * randomArray.length)];
 
-  document.getElementById("js-myAnimal").innerHTML = `You have been assigned: ${myAnimal}.`;
+  document.getElementById("js-myAnimal").innerHTML = `Your animal: ${myAnimal}.`;
 
-  document.getElementById("js-wizardsAnimal").innerHTML = `The Animal Wizard has chosen: ${wizardsAnimal}.`;
+  document.getElementById("js-wizardsAnimal").innerHTML = `The Wizard's animal: ${wizardsAnimal}.`;
 };
 
 
@@ -162,7 +162,7 @@ document.querySelector('.js-reset-score')
     localStorage.removeItem('score');
     updateScoreElement();
     clearPlayArea();
-    document.getElementById('js-playMoves').innerHTML = '';
+    document.getElementById('js-countMoves').innerHTML = '';
   });
 
 function clearPlayArea() {
@@ -174,6 +174,7 @@ function clearPlayArea() {
   document.getElementById('js-wizardRankScore').innerHTML = '';
   document.getElementById('js-wizardSurvivalScore').innerHTML = '';
   document.getElementById('js-wizardsTotalScore').innerHTML = '';
+  document.getElementById('js-scoreFeedback').innerHTML = '';
 }
 // add keydown functionality to enable play with key 'p'.
 document.body.addEventListener('keydown', (event) => {

@@ -21,7 +21,7 @@
     <link rel="manifest" href="assets\favicon\site.webmanifest">
 
     <!--stylesheet-->
-    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="assets\css\game-style.css">
   </head>
 
   <!-- body starts here-->
@@ -29,40 +29,41 @@
   <body class="body">
     <!--header-->
     <header class="header">
-      <a href="index.html" class = "gameName">
+      <a href="index.html" class="gameName">
         <h1>Randomalia</h1>
       </a>
-      <h><em class = "edition">Savannah Edition</em></h2>
-      <p><em class = "motto">A fun game for you, family and your friends.</em></p>
+      <h><em class="edition">Savannah Edition</em></h2>
+        <p><em class="motto">A fun game for you, family and your friends.</em></p>
 
-      <nav class="menu">
+        <nav class="menu">
           <a href="index.html" class="active navItem">Home</a>
-          <a href="game.html" class = "navItem">Game</a>
-      </nav>
+          <a href="game.html" class="navItem">Game</a>
+        </nav>
 
     </header>
 
     <!--Main Content -->
-    <main class="mainContent">      
+    <main class="mainContent">
       <div Class="gameIntro">
-        <p class = "welcomeMessage">Welcome to Randomalia, the Game!
+        <p class="welcomeMessage">Welcome to Randomalia, the Game!
           <br>
-          Reaady to challenge the <em class = "wizard">Animal Wizard</em>? Let's Go!</p>        
+          Have Fun!
+        </p>
       </div>
+
+      <!--Play button-->
 
       <div class="playbutton">
 
         <button class="js-playGame">Play</button>
 
-
       </div>
 
-      <div class = "countMoves">
+      <!--Play mouse counter-->
+
+      <div class="countMoves">
         <p id="js-countMoves"></p>
       </div>
-        
-
-      
 
       <div class="js-animalArea">
 
@@ -107,10 +108,12 @@
           <p id="js-wizardsTotalScore"></p>
         </span>
 
-        <div class="scoreFeedback">
-          <p id="js-scoreFeedback"></p>
-        </div>
       </div>
+
+      <div class="scoreFeedback">
+        <p id="js-scoreFeedback"></p>
+      </div>
+
 
       <div>
         <p id='js-result-message'></p>
@@ -127,6 +130,7 @@
         <span class="ties">Ties:
           <p id="js-ties">0</p>
         </span>
+
       </div>
 
       <!--Add a Congratulatory message for a game win and an encouragement for game loss-->
@@ -134,9 +138,9 @@
       <button class="js-reset-score">Reset Score</button>
 
 
-      <div class="pageNavLinks">
+      <div class="pageNavLink">
         <a href="index.html">Home</a>
- 
+
       </div>
 
       <script src="assets\js\randomalia.js"></script>

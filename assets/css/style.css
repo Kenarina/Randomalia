@@ -8,13 +8,82 @@
     margin: 0%;
     box-sizing: border-box;
 }
+
+/*General Styles*/
 body {
+    min-height: 100vh;
+    display: flex;
     background-color: rgb(15, 134, 138);
     color: black;
     font-family: 'Open Sans', sans-serif;
-    font-size: ;
-    display: flex;
+    font-size: 14px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     }
+
+/*Header*/
+.header {
+    position: fixed;
+    background-color: rgb(69, 159, 182);
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    text-align: center;
+}
+.gameName {
+    color: blue;
+    text-align: center;
+    font-size: 8px;
+   
+}
+.edition {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.motto {
+    color: rgb(18, 28, 116);
+    font-weight: bold;
+    font-size: 12px;
+
+}
+.menu {
+    font-size: 15px;
+    letter-spacing: 2px;
+    list-style-type: none;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+.navItem {
+    padding: 12px;
+}
+
+
+
+/*
+
+/*Footer*/
+.footer {
+    margin-top: auto;
+    background-color: rgb(139, 165, 165);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+

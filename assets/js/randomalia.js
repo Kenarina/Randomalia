@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
       if (this.getAttribute("class") === "js-playGame") {
         selectAnimals();
-        alert(`Hey, a random class will selected, from which an animal will be assigned to you.`)
+        alert(`Hey, a random class will be selected, from which an animal will be assigned to you.`)
         alert("Rank scores for your animal classes will now be calculated")
         calculateScores();
         playCount();
@@ -191,5 +191,5 @@ document.body.addEventListener('keydown', (event) => {
 let moveCount = 0;
 function playCount() {
   moveCount += 1;
-  document.getElementById('js-playMoves').innerHTML = `Moves: ${moveCount}`;
+  document.getElementById('js-countMoves').innerHTML = `Moves: ${moveCount}`;
 }

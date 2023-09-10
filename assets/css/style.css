@@ -35,7 +35,7 @@ body {
     text-align: center;
 }
 
-.gameName {
+.logo {
     color: blue;
     text-align: center;
     font-size: 8px;
@@ -163,7 +163,6 @@ body {
     .about,
     .theGame {
         font-size: 16px;
-        text-align: justify;
         padding: 5px;
     }
     .wizard,
@@ -180,3 +179,5 @@ body {
     
     .gameLength {
         font-size: 20px;
+    }
+}

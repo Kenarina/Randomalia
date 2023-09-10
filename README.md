@@ -7,7 +7,7 @@ Randomalia is probability game about animals. It is designed for all age groups 
 
 The game, Randomalia, is based on lists of animals grouped into  Mammals, Birds, Fish and Reptiles. Some few animals from these classes form the *Predator League*. The user plays against the computer, a.k.a. the *Animal Wizard*. On playing a class of animals is randomly selected, followed by a random selection of an animal from this class, which will be assigned to the player. The same sequence of events will happen for the *Animal Wizard*. For either animal choice, a **rankscore** based on animal class and a **survivalscore** based in membership to the *Predator League* will be computed. The  The player with a higher **Total Score** wins the round.  
 
-The live site is available [here](https://kenarina.github.io/Owens-Homestay-Resort/)
+The live site is available [here](https://kenarina.github.io/Randomalia/)
 
 ## User stories ##
 
@@ -47,9 +47,9 @@ The full game page (in-play mode) has, mainly, a header section, a welcome-remar
 ## Responsive Design ##
 
 The website has been optimised for responsive display on mobile phones, tablets, labtops and large screens, as exemplified in the images here:
-<p><img src="assets\Images\OHR-Responsive-Home.webp" alt="Displays of the home page on various screen sizes."></p>  
+<p><img src="assets\images\HomePage.png" alt="Displays of the home page on various screen sizes."></p>  
 
-<p><img src="assets\Images\OHR-Responsive-gallery.webp" alt="Displays of the gallery page on various screen sizes."></p>  
+<p><img src="assets\images\GamePage.png" alt="Displays of the game page on various screen sizes."></p>  
 
 ## Design themes fonts. ##  
 
@@ -94,7 +94,7 @@ This project was deployed to GitHub pages and the site is up and running.
 *A notification for deployment will appear. Refresh the page, and the link to the deployed site will be available in a green sub-section on the top of the page.  
 *Click on the link to go to the live deployed page.  
 
-The live link can be found [here](https://kenarina.github.io/Owens-Homestay-Resort/).
+The live link can be found [here](https://kenarina.github.io/Randomalia/).
 
 ### How to run this project Locally (I used VSCode) ###
 

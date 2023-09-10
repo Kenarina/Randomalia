@@ -36,13 +36,13 @@ The home page gives a brief description of how the game and provides a link to t
 
 The page is based on this wireframe:
 
-<p><img src="assets/Images/Wireframes/Home.png" alt="Wireframe for Home Page.">Wireframe for Home Page.</p>  
+<p><img src="assets/images/Page1-wireframe.PNG" alt="Wireframe for Home Page.">Wireframe for Home Page.</p>  
 
-## Gallery Page ##
+## Game Page ##
 
 The full game page (in-play mode) has, mainly, a header section, a welcome-remark section, a chosen-animal display section, three score-display sections and a footer.The page is based on this wireframe:
 
-<p><img src="assets/Images/Wireframes/Gallery.png" alt="Wireframe for Gallery Page.">Wireframe for Gallery Page.</p>  
+<p><img src="assets/images/Page2-wireframe.PNG" alt="Wireframe for Game Page.">Wireframe for Gallery Page.</p>  
 
 ## Responsive Design ##
 
@@ -64,7 +64,7 @@ Basic functionality to achieve desired disign outcomes were progressively done i
 
 Verification of responsive desing. Google Chrome, Mozilla Firefox and Microsoft Edge were successfully used for this test.  
 
-Automatic HTML checking and CSS validation were done using [Nu Html Checker](https://validator.w3.org/nu/). All errors and bad code were corrected and recheked until only external links such as from Google Fonts triggered warnings.  
+Automatic HTML checking was done using [Nu Html Checker](https://validator.w3.org/nu/). All errors and bad code were corrected and recheked until only external links such as from Google Fonts triggered warnings.  The test results were uploaded [here](assets/test-results).
 
 
 ##  Technologies ##
@@ -110,4 +110,4 @@ The live link can be found [here](https://kenarina.github.io/Owens-Homestay-Reso
 
 ## Acknowledgements ##
 
-While I came up with the original idea for this project, I would not have brought it up to this stage had it not been for Ronan McClelland, my mentor on this journey. His wealth of experience and patience have been very inspirational.
+I am always grateful to Ronan McClelland, my mentor on this journey. His wealth of experience and patience have been very inspirational especially in the initial focusing of this project.

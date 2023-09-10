@@ -38,7 +38,8 @@ body {
 .logo {
     color: blue;
     text-align: center;
-    font-size: 8px;
+    font-size: 14px;
+    font-weight: bold;
 
 }
 
@@ -53,12 +54,12 @@ body {
 .motto {
     color: rgb(18, 28, 116);
     font-weight: bold;
-    font-size: 12px;
+    font-size: 10px;
 
 }
 
 .menu {
-    font-size: 15px;
+    font-size: 12px;
     letter-spacing: 2px;
     list-style-type: none;
     flex-direction: row;
@@ -137,6 +138,9 @@ body {
         width: 100%;
 
     }
+    .logo {
+        font-size: 14px;
+    }
 
     
     .edition {
@@ -145,7 +149,7 @@ body {
     }
     
     .motto {
-        font-size: 15px;
+        font-size: 14px;
         align-items: flex-start;
     
     }

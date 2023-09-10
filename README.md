@@ -1,39 +1,113 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome,
+# Randomalia #
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Randomalia is probability game about animals. It is designed for all age groups and arouses interest in the world of animals. What makes it special is that despite having a singe user functionality, it is also possible to imgine a or group of users having fun around it, taking advantage of its features.  
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## Description ##
 
-## Codeanywhere Reminders
+The game, Randomalia, is based on lists of animals grouped into  Mammals, Birds, Fish and Reptiles. Some few animals from these classes form the *Predator League*. The user plays against the computer, a.k.a. the *Animal Wizard*. On playing a class of animals is randomly selected, followed by a random selection of an animal from this class, which will be assigned to the player. The same sequence of events will happen for the *Animal Wizard*. For either animal choice, a **rankscore** based on animal class and a **survivalscore** based in membership to the *Predator League* will be computed. The  The player with a higher **Total Score** wins the round.  
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+The live site is available [here](https://kenarina.github.io/Owens-Homestay-Resort/)
 
-`python3 -m http.server`
+## User stories ##
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+The following considerations of the user experience underly the design of the website:  
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+1. A simple and easily navigable, less crowded website.  
 
-`http_server`
+2. Brief introduction to the game and how it is played (home page).
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+3. Compatibility with user's device.  
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+4. Visually appealing, less overwhelming and fairly neutral design themes to appeal to wide range of users.   
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+5. Interactivity and feedback to the user e.g. through deployment of alerts.  
 
-To log into the Heroku toolbelt CLI:
+# UX/UI Design #
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Structure ##
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+The structure of the website was created based on the following wireframes crated with [Figma](https://www.figma.com/):  
 
----
 
-Happy coding!
+## Home Page ##
+
+The home page gives a brief description of how the game and provides a link to the game page. The footer section provides external links to social media pages and a copyright attribution.  
+
+The page is based on this wireframe:
+
+<p><img src="assets/Images/Wireframes/Home.png" alt="Wireframe for Home Page.">Wireframe for Home Page.</p>  
+
+## Gallery Page ##
+
+The full game page (in-play mode) has, mainly, a header section, a welcome-remark section, a chosen-animal display section, three score-display sections and a footer.The page is based on this wireframe:
+
+<p><img src="assets/Images/Wireframes/Gallery.png" alt="Wireframe for Gallery Page.">Wireframe for Gallery Page.</p>  
+
+## Responsive Design ##
+
+The website has been optimised for responsive display on mobile phones, tablets, labtops and large screens, as exemplified in the images here:
+<p><img src="assets\Images\OHR-Responsive-Home.webp" alt="Displays of the home page on various screen sizes."></p>  
+
+<p><img src="assets\Images\OHR-Responsive-gallery.webp" alt="Displays of the gallery page on various screen sizes."></p>  
+
+## Design themes fonts. ##  
+
+Softness and neutrality were the theme for color and font choice. The text fonts, Open Sans and Oswald from [Google Fonts](https://fonts.google.com/) were preferred for this project. The text is easy on the eye. All images used in this project were previously taken personally. They were not outsourced externally.  
+
+## Testing ##
+Basic functionality to achieve desired disign outcomes were progressively done in an iterative process. The project was written using Visual Studio Code and with a Live Server Extension *Live Preview, from Microsoft* together with inspection via the brouser console. The following tests were done manually during the coding process.  
+
+*Functionality of internal links, including the navigation bar links.
+
+*Functionality of external links.
+
+Verification of responsive desing. Google Chrome, Mozilla Firefox and Microsoft Edge were successfully used for this test.  
+
+Automatic HTML checking and CSS validation were done using [Nu Html Checker](https://validator.w3.org/nu/). All errors and bad code were corrected and recheked until only external links such as from Google Fonts triggered warnings.  
+
+
+##  Technologies ##
+ 
+[Visual Studio Code](https://code.visualstudio.com/) desktop version for HTML and CSS  
+[Google Fonts](https://fonts.google.com/) for fonts.  
+[favicon.io](https://favicon.io/favicon-converter/) to generate the favicon.  
+[FontAwesome](https://fontawesome.com/) for icons  
+[Figma](https://www.figma.com/)
+[GitHub](https://github.com/) to hosting source code, to deploy and host the website.  
+[Git](https://git-scm.com/) for version control.  
+Microsoft Powerpoint for merging images prior to web optimisation for the readme text.  
+
+Other resources, including course material from Code Institute, were consulted from time to time. Examples include: [StackOverflow](https://stackoverflow.com/), [W3schools](https://www.w3schools.com/) and [TutorialRepublic](https://www.tutorialrepublic.com/), [Youtube](youtube.com) . However, the course material from Code Institute was the primary resource.  
+
+## Deployment ##
+
+This project was deployed to GitHub pages and the site is up and running.
+
+### Deployment procedure: ###
+
+*Log into GitHub.  
+*Select **Randomalia** from the list of repositories.  
+*Select Settings and next, on the left side down-menu, select pages.  
+*Under Source, select main and the *default value /(root)*.  
+*Press Save.  
+*A notification for deployment will appear. Refresh the page, and the link to the deployed site will be available in a green sub-section on the top of the page.  
+*Click on the link to go to the live deployed page.  
+
+The live link can be found [here](https://kenarina.github.io/Owens-Homestay-Resort/).
+
+### How to run this project Locally (I used VSCode) ###
+
+**Clone the repository**  
+
+*Navigate to the **Randomalia** GitHub Repository.  
+*Click the Code drop-down menu.  
+*Click the HTTPS sub-heading under the Clone heading.  
+*Copy the link.  
+*Open VSCode.  
+*Open a terminal in the directory of your choice, type git clone and paste the link.  
+*A clone of the repository will now be created on your machine.  
+
+## Acknowledgements ##
+
+While I came up with the original idea for this project, I would not have brought it up to this stage had it not been for Ronan McClelland, my mentor on this journey. His wealth of experience and patience have been very inspirational.

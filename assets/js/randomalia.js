@@ -129,24 +129,24 @@ function calculateScores() {
 
   if (myTotalScore > wizardsTotalScore) {
     score.wins += 1;
-    document.getElementById('js-wins').innerHTML = score.wins;
+    document.getElementById('js-wins').innerHTML = `Wins: ${score.wins}`;
     document.getElementById('js-scoreFeedback').innerHTML = 'Wow! Good move against the wizard!';
   } else if (myTotalScore < wizardsTotalScore) {
     score.losses += 1;
-    document.getElementById('js-losses').innerHTML = score.losses;
+    document.getElementById('js-losses').innerHTML = `Losses: ${score.losses}`;
     document.getElementById('js-scoreFeedback').innerHTML = 'Sorry! The wizard comes in top.';
   } else if (myTotalScore === wizardsTotalScore) {
     score.ties += 1;
-    document.getElementById('js-ties').innerHTML = score.ties;
+    document.getElementById('js-ties').innerHTML = `Ties: ${score.ties}`;
     document.getElementById('js-scoreFeedback').innerHTML = 'Hey, its a tie. Keep going.';
   }
 
 }
 
 function updateScoreElement() {
-  document.getElementById('js-wins').innerHTML = score.wins;
-  document.getElementById('js-losses').innerHTML = score.losses;
-  document.getElementById('js-ties').innerHTML = score.ties;
+  document.getElementById('js-wins').innerHTML = `Wins: ${score.wins}`;
+  document.getElementById('js-losses').innerHTML = `Losses: ${score.losses}`;
+  document.getElementById('js-ties').innerHTML = `Ties: ${score.ties}`;
 }
 updateScoreElement();
 
@@ -162,7 +162,7 @@ document.querySelector('.js-reset-score')
     localStorage.removeItem('score');
     updateScoreElement();
     clearPlayArea();
-    document.getElementById('js-countMoves').innerHTML = '';
+    document.getElementById('js-countMoves').innerHTML = moveCount = '';
   });
 
 function clearPlayArea() {
@@ -175,6 +175,7 @@ function clearPlayArea() {
   document.getElementById('js-wizardSurvivalScore').innerHTML = '';
   document.getElementById('js-wizardsTotalScore').innerHTML = '';
   document.getElementById('js-scoreFeedback').innerHTML = '';
+  document.getElementById('js-countMoves').innerHTML = moveCount = '';
 }
 // add keydown functionality to enable play with key 'p'.
 document.body.addEventListener('keydown', (event) => {
